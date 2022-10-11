@@ -1,6 +1,6 @@
 body {
     background-color: rgb(50, 50, 50);
-    color: rgb(256, 15, 15);
+    color: rgb(0, 102, 204);
 }
 
 #header {
@@ -12,7 +12,7 @@ body {
 
 #button {
     text-align: center;
-    border: 10px solid rgb(256, 15, 15); 
+    border: 10px solid rgb(0, 102, 204); 
     font-size: 2.2rem;
     padding: 5%;
     margin: 5%;

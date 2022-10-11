@@ -1,7 +1,7 @@
 const ansObj = {
-    array1 : ["Goku", "Vegeta", "Monster #8", "Future Trunks", "Simon the Digger", "Kamina", "Yoko Ritona", "Gutz", "Noctis Leucis Caelum", "Aksel Naess", "Ashley Price", "Iron Man", "Thor", "Saitama", "Genos", "Obi-Wan Kenobi", "All-Might", "Itadori Yuji", "Sukuna Ryomen",],
-    array2 : ["This is to go even Further Beyond!", "Go beyond Plus Ultra!", "All the lights in the sky are stars!", "Believe in the You that believes in Yourself!", "I am Kafka Hibino!", "I'm a hero for fun!", "I must get stronger, I Need To!", "Have a taste of Saiyan Pride!", "Let's see you Grit Those Teeth!", "It'll take Two, and No More!", "Touch the Untouchable, Break the Unbreakable!", "Row! Row! Fight The Power!", "I am Iron Man!", "This Ends Here And Now!", "Kings of Leucis, Come To Me!", "It's Over Anakin, I Have The High Ground!", "It's Alright Now, Because I Am Here!", "You Cannot Stop Me!", "Black Flash!"],
-    array3 : ["Storm the Castle", "Steal the Data", "Collect the DragonBalls", "Stop the Sith", "Deceive the Beastmen", "Defeat the Spiral King", "Defeat Frieza", "Stop Strazar", "Destory the Death Star", "Annihilate the Demons", "Disarm the Bomb", "Conquer Hell", "Train to go Super Saiyan", "Become the #1 Hero", "Find the Meaning of Life", "Build a Harem", "Look Beyond Your Past", "Solve the Puzzle", "Destroy the Curse"]
+    array1 : ["As the sun sets on another day,", "when darkness surrounds you,", "If everything seems impossible,", "Inside yourself you will find,", "shadows may cover everything,", "Hope is always close by,", "When you feel empty,", "If you struggle to escape lonliness,", "Many feel consumed by their mistakes,", "In a world so vast,",],
+    array2 : ["things feel too much,", "you struggle to look inside yourself,", "the stars seem no longer to shine,", "the light may be difficult to find,", "you have no idea how you got this far,", "every descision you have made has led you astray,", " when your worth feels lesser than this life leads you to believe,"],
+    array3 : ["you can set out into the world and let beauty consume you.", "life beams like a nova from your bossom.", "once, darkness tried once to devour you and failed. As it shall again.", "that time is not your enemy, as long as you have it, there is hope.", "the Future can be anything you want it to be. It hasn't happened yet", "you are worthy of love!", "the answers are closer than you think.", "the day is always darkest before the dawn."]
 }
 
 let randArrNum = arr => Math.floor(Math.random() * arr.length)
@@ -18,9 +18,9 @@ let button = document.getElementById('button');
 // console.log(ans1)
 
 button.onclick = () => {
-    document.getElementById('ans1').innerHTML = `Your partner for this mission is ${messageSelector(ansObj.array1)}!`;
-    document.getElementById('ans2').innerHTML = `Your Battle Cry is "${messageSelector(ansObj.array2)}"`;
-    document.getElementById('ans3').innerHTML = `Your Objective: ${messageSelector(ansObj.array3)}`;
+    document.getElementById('ans1').innerHTML = `... ${messageSelector(ansObj.array1)}`;
+    document.getElementById('ans2').innerHTML = `and ${messageSelector(ansObj.array2)}`;
+    document.getElementById('ans3').innerHTML = `know ${messageSelector(ansObj.array3)}`;
 };
 
 button.onmousedown = () => {
@@ -33,6 +33,6 @@ button.onmouseup = () => {
 
 alert
 
-// console.log(`Your partner for this mission is ${messageSelector(ansObj.array1)}!`);
-// console.log(`Your Battle Cry is "${messageSelector(ansObj.array2)}"`);
-// console.log(`Your Objective: ${messageSelector(ansObj.array3)}`);
+// console.log(`First part of quote ${messageSelector(ansObj.array1)}!`);
+// console.log(`second part of quote "${messageSelector(ansObj.array2)}"`);
+// console.log(`Final part ${messageSelector(ansObj.array3)}`);
